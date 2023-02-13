@@ -1,4 +1,4 @@
-package com.spartaglobal.mondayspringproject;
+package com.spartaglobal.mondayspringproject.entities;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
