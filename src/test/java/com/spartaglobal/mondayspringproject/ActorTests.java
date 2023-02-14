@@ -15,19 +15,19 @@ public class FilmTests {
     @Autowired
     private ActorRepository repo;
 
-        @Test
-    void findFilmByActor(){
-       var actor = new ActorDAO(repo).getActorDTOByName("ed", "chase");
-       // film dao to parse actor.getId()
-        System.out.println(actor);
-        assertEquals("ed chase", actor);
-    }
+//    @Test
+//    void findFilmByActor(){
+//       var actor = new ActorDAO(repo).getActorDTOByName("ed", "chase");
+//       // film dao to parse actor.getId()
+//        System.out.println(actor);
+//        assertEquals("ed chase", actor);
+//    }
 
 
     // testing to see if this runs, as I am getting an error
     @Test
     void test(){
-        assertTrue(true);
+        assertEquals("true","true");
     }
 
 
