@@ -2,6 +2,7 @@ package com.spartaglobal.mondayspringproject;
 
 import com.spartaglobal.mondayspringproject.dao.ActorDAO;
 import com.spartaglobal.mondayspringproject.repositories.ActorRepository;
+import jakarta.transaction.Transactional;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -14,7 +15,7 @@ public class FilmTests {
     @Autowired
     private ActorRepository repo;
 
-    @Test
+        @Test
     void findFilmByActor(){
        var actor = new ActorDAO(repo).getActorDTOByName("ed", "chase");
        // film dao to parse actor.getId()
