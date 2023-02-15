@@ -2,7 +2,7 @@ package com.spartaglobal.mondayspringproject.dao;
 
 import com.spartaglobal.mondayspringproject.dto.ActorDTO;
 import com.spartaglobal.mondayspringproject.entities.Actor;
-import com.spartaglobal.mondayspringproject.repository.ActorRepository;
+import com.spartaglobal.mondayspringproject.repositories.ActorRepository;
 import com.spartaglobal.mondayspringproject.utils.DTOConverter;
 
 import java.util.List;
@@ -14,10 +14,11 @@ public class ActorDAO {
         this.repo = repo;
     }
 
-    public ActorDTO getActorFistNameAndLastName(String firstName, String lastName) {
-        List<Actor> actorList = repo.findActorsByFirstNameAndLastName(firstName, lastName);
-        if (actorList.size() != 1) {
-            throw new RuntimeException("No unique actor with these name and last name.");
+    // ed chase (id 3)
+    public ActorDTO getActorDTOByName(String firstName, String lastName) {
+        List<Actor> actorList = repo.findActorByFirstNameAndLastName(firstName, lastName);
+        if(actorList.isEmpty()) {
+            throw new RuntimeException("No actor of that name");
         }
         return DTOConverter.toDTO(actorList.get(0));
     }

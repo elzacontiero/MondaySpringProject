@@ -55,4 +55,8 @@ public class FilmActor {
         this.lastUpdate = lastUpdate;
     }
 
+    @Override
+    public String toString() {
+        return film+"";
+    }
 }

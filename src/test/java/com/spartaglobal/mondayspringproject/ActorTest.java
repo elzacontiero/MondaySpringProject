@@ -1,15 +1,13 @@
 package com.spartaglobal.mondayspringproject;
 
 import com.spartaglobal.mondayspringproject.dao.ActorDAO;
-import com.spartaglobal.mondayspringproject.repository.ActorRepository;
-import com.spartaglobal.mondayspringproject.entities.Actor;
+import com.spartaglobal.mondayspringproject.repositories.ActorRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.annotation.Transactional;
 
-import java.util.List;
-import java.util.Optional;
 
 @SpringBootTest
 public class ActorTest {
@@ -19,7 +17,7 @@ public class ActorTest {
 
     @Test
     public void testGetActorFirstAndLastName() {
-        var result = new ActorDAO(repo).getActorFistNameAndLastName("ZERO","CAGE");
+        var result = new ActorDAO(repo).getActorDTOByName("ZERO","CAGE");
         System.out.println(result);
         Assertions.assertEquals("ZERO", result.getFirstName() );
         Assertions.assertEquals("CAGE", result.getLastName() );
