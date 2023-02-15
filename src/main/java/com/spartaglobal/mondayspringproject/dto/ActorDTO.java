@@ -40,8 +40,11 @@ public class ActorDTO {
         this.lastUpdate = lastUpdate;
     }
 
-    @Override
-    public String toString() {
-        return id + " " + firstName + " " + lastName;
-    }
+        @Override
+        public String toString() {
+            return "ActorDTO{" +
+                    "firstName='" + firstName + '\'' +
+                    ", lastName='" + lastName + '\'' +
+                    '}';
+        }
 }

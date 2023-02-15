@@ -14,7 +14,6 @@ public class ActorDAO {
         this.repo = repo;
     }
 
-
     // ed chase (id 3)
     public ActorDTO getActorDTOByName(String firstName, String lastName) {
         List<Actor> actorList = repo.findActorByFirstNameAndLastName(firstName, lastName);
@@ -23,5 +22,4 @@ public class ActorDAO {
         }
         return DTOConverter.toDTO(actorList.get(0));
     }
-
 }
