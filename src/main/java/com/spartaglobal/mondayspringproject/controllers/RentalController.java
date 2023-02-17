@@ -22,7 +22,7 @@ public class RentalController {
     }
 
 //    // Ticket 19 - Create a post mapping method with endpoints for adding data to the rental table
-//    @PostMapping("sakila/actors")
+//    @PostMapping("springProject/api/rental")
 //    public Rental createRental(@RequestBody Rental newRental) {
 //        newRental.setLastUpdate(Instant.now());
 //        return repo.save(newRental);
