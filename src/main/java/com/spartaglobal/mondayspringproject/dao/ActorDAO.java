@@ -21,4 +21,11 @@ public class ActorDAO {
         }
         return DTOConverter.toDTO(actorList.get(0));
     }
+    public ActorDTO getActorIdFistNameAndLastName(String firstName, String lastName) {
+        List<Actor> actorList = repo.findActorIdByFirstNameAndLastName(firstName, lastName);
+        if (actorList.size() != 1) {
+            throw new RuntimeException("No unique actor with these name and last name.");
+        }
+        return DTOConverter.toDTO(actorList.get(0));
+    }
 }

@@ -6,4 +6,5 @@ import java.util.List;
 public interface ActorRepository extends JpaRepository<Actor, Integer> {
 
     List<Actor> findActorsByFirstNameAndLastName(String firstName, String lastName);
+    List<Actor> findActorIdByFirstNameAndLastName(String firstName, String lastName);
 }

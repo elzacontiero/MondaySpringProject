@@ -5,6 +5,7 @@ import java.time.Instant;
 public class ActorDTO {
     private String firstName;
     private String lastName;
+    private Integer id;
 
     public String getFirstName() {
         return firstName;

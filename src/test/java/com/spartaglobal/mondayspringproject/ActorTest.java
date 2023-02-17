@@ -24,4 +24,5 @@ public class ActorTest {
         Assertions.assertEquals("ZERO", result.getFirstName() );
         Assertions.assertEquals("CAGE", result.getLastName() );
     }
+
 }
