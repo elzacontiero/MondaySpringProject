@@ -24,4 +24,12 @@ public class FilmDAO {
         }
         return listTitleFilm;
     }
+
+    public Optional<Film> findByID(Integer id) {
+        return repo.findById(id);
+    }
+
+    public Film update(Film film) {
+        return repo.save(film);
+    }
 }
