@@ -31,6 +31,11 @@ public class RentalController {
         return newer;
     }
 
+//    @PutMapping("springProject/api/rentals/putRental")
+//    public Rental putRentalMethod(){
+//
+//    }
+
 
     @ExceptionHandler
     public String reportError(Throwable t){
