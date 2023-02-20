@@ -1,8 +1,8 @@
 # MondaySpringProject
 
-In this API project we have created methods that create, read, update and delete films and rental entries. 
+In this API project we have created methods that create, read, update and delete films and rental entries. To use these methods, please use the following end points;
 
-To use these methods, please use the following end points. 
+### Films
 
 Read films endpoint: GET: http://localhost:8080/springProject/api/films/getFilms/{Id}
 
@@ -30,7 +30,15 @@ To create a new film, data needs to be in the below format and the special featu
 }
 
 ```
+### Rentals
 
+Read rentals endpoint: GET: http://localhost:8080/springProject/api/rentals/getRental/{id}
+
+Create rentals endpoint: POST: http://localhost:8080/springProject/api/rentals/postRental <b>(feature coming soon)</b>
+
+Update rentals endpoint: PATCH: http://localhost:8080/springProject/api/rentals/patchRental <b>(feature coming soon)</b>
+
+Delete rentals endpoint: DELETE: http://localhost:8080/springProject/api/rentals/{id} <b>(feature coming soon)</b>
 
 ---
 
