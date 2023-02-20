@@ -8,6 +8,16 @@ public class RentalDTO {
     private Instant returnDate;
     private Instant lastUpdate;
 
+    private short staffId;
+
+    public short getStaffId() {
+        return staffId;
+    }
+
+    public void setStaffId(short staffId) {
+        this.staffId = staffId;
+    }
+
     public Integer getId() {
         return id;
     }

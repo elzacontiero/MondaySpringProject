@@ -8,6 +8,7 @@ public class ActorDTO {
     private String lastName;
     private Instant lastUpdate;
 
+
     public Integer getId() {
         return id;
     }

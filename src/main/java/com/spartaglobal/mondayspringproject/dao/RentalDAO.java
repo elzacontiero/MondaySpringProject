@@ -2,6 +2,7 @@ package com.spartaglobal.mondayspringproject.dao;
 
 import com.spartaglobal.mondayspringproject.dto.RentalDTO;
 import com.spartaglobal.mondayspringproject.entities.Rental;
+import com.spartaglobal.mondayspringproject.entities.Staff;
 import com.spartaglobal.mondayspringproject.repositories.RentalRepository;
 import com.spartaglobal.mondayspringproject.utils.DTOConverter;
 
@@ -19,4 +20,17 @@ public class RentalDAO {
         return DTOConverter.toRentalDTO(getRental.get());
 
     }
+    public RentalDTO getFullRentalDTObyId(Integer id){
+        Optional<Rental> getRental = repo.findById(id);
+        return DTOConverter.toFullRentalDTO(getRental.get());
+
+    }
+
+    public RentalDTO getAllRental(Rental rent){
+       // Optional<Rental> getRentalid = repo.findById(rent.getId());
+
+        return DTOConverter.toFullRentalDTO(rent);
+
+    }
+
 }

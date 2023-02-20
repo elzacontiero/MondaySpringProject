@@ -3,13 +3,15 @@
   <component name="JpaBuddyIdeaProjectConfig">
     <option name="defaultUnitInitialized" value="true" />
     <option name="renamerInitialized" value="true" />
-    <option name="reverseEngineeringLastDbConnectionId" value="93ac204e-7a0a-4abb-b174-c4dcaca0656c" />
+    <option name="reverseEngineeringLastDbConnectionId" value="fbe362ec-79de-49b8-b30a-b1250a804c01" />
     <option name="reLastEntityCreationPackage" value="src/main/java/com/spartaglobal/mondayspringproject" />
     <reUseDbSnapshotConnections>
       <dbConnection id="93ac204e-7a0a-4abb-b174-c4dcaca0656c" />
+      <dbConnection id="fbe362ec-79de-49b8-b30a-b1250a804c01" />
     </reUseDbSnapshotConnections>
     <option name="reIgnoreSlowDbConnections">
       <ignoreDs id="93ac204e-7a0a-4abb-b174-c4dcaca0656c" />
+      <ignoreDs id="fbe362ec-79de-49b8-b30a-b1250a804c01" />
     </option>
   </component>
 </project>
