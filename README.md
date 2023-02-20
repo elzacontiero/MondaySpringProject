@@ -1,12 +1,16 @@
 # MondaySpringProject
 
-In this API project we have created methods that create, read and update films and rentals by their ID.
+In this API project we have created methods that create, read, update and delete films and rental entries. 
 
 To use these methods, please use the following end points. 
 
-Read films endpoint: springProject/api/films/getFilms/{Id}
+Read films endpoint: GET: http://localhost:8080/springProject/api/films/getFilms/{Id}
 
-Create films endpoint: springProject/api/films/postFilm
+Create films endpoint: POST: http://localhost:8080/springProject/api/films/postFilm
+
+Update films endpoint: PATCH: http://localhost:8080/springProject/api/films/patchFilm
+
+Delete films endpoint: DELETE: http://localhost:8080/springProject/api/films/{id}
 
 To create a new film, data needs to be in the below format and the special features can only include "Behind the Scenes, Trailers, Commentaries, Deleted Scenes". If you want to add multiple special feature tags, they must be seperated by a comma with no space.
 (example in json) 
